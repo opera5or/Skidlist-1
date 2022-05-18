@@ -91,7 +91,7 @@ end
 game.Players.PlayerAdded:Connect(function(AddedPlayer)
     if skids[AddedPlayer.Name] then
             game.StarterGui:SetCore("ChatMakeSystemMessage", {
-            Text = "!!! ATTENTION !!! A KNOWN SKID HAS JOINED YOUR SERVER!! SKID: "..AddedPlayer.Name;
+            Text = "A known skid has joined your server: "..AddedPlayer.Name;
             Font = Enum.Font.GothamBlack;   
             Color =Color3.fromRGB(255, 0, 0);      
            FontSize = 25                     
@@ -101,7 +101,7 @@ end)
 for _,v in pairs(game.Players:GetPlayers()) do
     if skids[v.Name] then
             game.StarterGui:SetCore("ChatMakeSystemMessage", {
-            Text = "!!! ATTENTION !!! A KNOWN SKID IS IN YOUR SERVER!! SKID: "..v.Name;
+            Text = "A known skid is in your server: "..v.Name;
             Font = Enum.Font.GothamBlack;   
             Color =Color3.fromRGB(255, 0, 0);      
            FontSize = 25                     
